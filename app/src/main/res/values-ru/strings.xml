@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Характер по цвету</string>
+    <string name="btn_define_the_temper">Оппределить характер</string>
+    <string name="hint">Цвета</string>
+</resources>
