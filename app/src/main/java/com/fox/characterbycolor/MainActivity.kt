@@ -1,7 +1,7 @@
 package com.fox.characterbycolor
 
-import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.btnDefine.setOnClickListener {
             showDescription(it)
         }
@@ -30,7 +31,8 @@ class MainActivity : AppCompatActivity() {
     private fun showDescription(view: View) {
         val position = binding.spinnerColor.selectedItemPosition
         binding.tvCharacter.text = getDescriptionByPosition(position)
-        when(position){
+        Log.d("TAG", " $position")
+        when (position) {
             0 -> binding.viewColor.setBackgroundColor(resources.getColor(R.color.red, null))
             1 -> binding.viewColor.setBackgroundColor(resources.getColor(R.color.orange, null))
             2 -> binding.viewColor.setBackgroundColor(resources.getColor(R.color.yellow, null))
@@ -45,7 +47,12 @@ class MainActivity : AppCompatActivity() {
             11 -> binding.viewColor.setBackgroundColor(resources.getColor(R.color.white, null))
             12 -> binding.viewColor.setBackgroundColor(resources.getColor(R.color.purple_own, null))
             13 -> binding.viewColor.setBackgroundColor(resources.getColor(R.color.turquoise, null))
-            14 -> binding.viewColor.setBackgroundColor(resources.getColor(R.color.light_green, null))
+            14 -> binding.viewColor.setBackgroundColor(
+                resources.getColor(
+                    R.color.light_green,
+                    null
+                )
+            )
             15 -> binding.viewColor.setBackgroundColor(resources.getColor(R.color.vinous, null))
             16 -> binding.viewColor.setBackgroundColor(resources.getColor(R.color.biege, null))
             else -> {
@@ -56,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun getDescriptionByPosition(position:Int) : String {
+    private fun getDescriptionByPosition(position: Int): String {
         val descriptions = resources.getStringArray(R.array.description_of_temp)
         return descriptions[position].toString()
     }

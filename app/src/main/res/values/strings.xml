@@ -3,28 +3,42 @@
     <string name="btn_define_the_temper">Define the temper</string>
     <string name="hint">color</string>
 
+    <string name="red">Red</string>
+    <string name="orange">Orange</string>
+    <string name="yellow">Yellow</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="pink">Pink</string>
+    <string name="violet">Violet</string>
+    <string name="dark_blue">Dark blue</string>
+    <string name="brown">Brown</string>
+    <string name="gray">Gray</string>
+    <string name="black">Black</string>
+    <string name="white">White</string>
+    <string name="Purple">Purple</string>
+    <string name="turquoise">Turquoise</string>
+    <string name="light_green">LightGreen</string>
+    <string name="vinous">Vinous</string>
+    <string name="biege">Beige</string>
+
     <string-array name="colors">
-        <item name="red">Red</item>
-        <item name="orange">Orange</item>
-        <item name="yellow">Yellow</item>
-        <item name="green">Green</item>
-        <item name="blue">Blue</item>
-        <item name="pink">Pink</item>
-        <item name="violet">Violet</item>
-        <item name="dark_blue">Dark blue</item>
-        <item name="brown">Brown</item>
-        <item name="gray">Gray</item>
-        <item name="black">Black</item>
-        <item name="white">White</item>
-        <item name="Purple">Purple</item>
-        <item name="turquoise">Turquoise</item>
-        <item name="light_green">LightGreen</item>
-        <item name="vinous">Vinous</item>
-        <item name="biege">Beige</item>
-
-
-
-
+        <item name="red">@string/red</item>
+        <item name="orange">@string/orange</item>
+        <item name="yellow">@string/yellow</item>
+        <item name="green">@string/green</item>
+        <item name="blue">@string/blue</item>
+        <item name="pink">@string/pink</item>
+        <item name="violet">@string/violet</item>
+        <item name="dark_blue">@string/dark_blue</item>
+        <item name="brown">@string/brown</item>
+        <item name="gray">@string/gray</item>
+        <item name="black">@string/black</item>
+        <item name="white">@string/white</item>
+        <item name="Purple">@string/Purple</item>
+        <item name="turquoise">@string/turquoise</item>
+        <item name="light_green">@string/green</item>
+        <item name="vinous">@string/vinous</item>
+        <item name="biege">@string/biege</item>
     </string-array>
 
     <string-array name="description_of_temp">
